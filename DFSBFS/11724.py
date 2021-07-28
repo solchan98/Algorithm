@@ -1,6 +1,8 @@
 # 연결 요소의 개수, Silver2
+import sys
+sys.setrecursionlimit(10000) ## RecursionError 방지
 
-N, M = map(int, input().split())
+N, M = map(int, sys.stdin.readline().split())
 
 graph = [[] for _ in range(N+1)]
 visited = [False] * (N + 1)
@@ -8,7 +10,7 @@ graph[0] = [0, 0]
 result = 0
 
 for _ in range(M):
-    start, end = map(int, input().split())
+    start, end = map(int, sys.stdin.readline().split())
     graph[start].append(end)
     graph[end].append(start)
     graph[start].sort()
