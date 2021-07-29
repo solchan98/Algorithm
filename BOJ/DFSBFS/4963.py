@@ -5,6 +5,7 @@ from collections import deque
 dx = [0, 0, -1, 1, 1, -1, 1, -1]
 dy = [-1, 1, 0, 0, -1, -1, 1, 1]
 
+## bfs solution
 def bfs(i, j):
     queue = deque()
     queue.append([i, j])
@@ -16,6 +17,21 @@ def bfs(i, j):
             if 0 <= nx < h and 0 <= ny < w and s[nx][ny] == 1:
                 queue.append([nx, ny])
                 s[nx][ny] = 0
+
+## dfs solution
+def dfs(i, j):
+    if 0 <= i < h and 0 <= j < w and s[i][j] == 1:
+        s[i][j] = 0
+        dfs(i, j-1)
+        dfs(i, j + 1)
+        dfs(i - 1, j)
+        dfs(i + 1, j)
+        dfs(i + 1, j - 1)
+        dfs(i - 1, j - 1)
+        dfs(i + 1, j + 1)
+        dfs(i - 1, j + 1)
+        return True
+    return False
 
 while True:
     result = 0
@@ -30,5 +46,6 @@ while True:
         for j in range(w):
             if s[i][j] == 1:
                 bfs(i, j)
+                #dfs(i, j)
                 result += 1
     print(result)

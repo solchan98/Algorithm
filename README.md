@@ -21,7 +21,7 @@
 | [링크](https://www.acmicpc.net/problem/1012) | 유기농 배추  | Silver2 | DFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/1012.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/11724) | 연결 요소의 개수  | Silver2 | DFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/11724.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/1260) | DFS와 BFS  | Silver2 | DFS/BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/1260.py) | BOJ |
-| [링크](https://www.acmicpc.net/problem/4963) | 섬의 개수  | Silver2 | BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/4963.py) | BOJ |
+| [링크](https://www.acmicpc.net/problem/4963) | 섬의 개수  | Silver2 | DFS/BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/4963.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/2606) | 바이러스  | Silver3 | BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/2606.py) | BOJ |
 #### 동적계획법(Dynamic Programming)
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
