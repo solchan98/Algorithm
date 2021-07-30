@@ -1,6 +1,13 @@
 # 알고리즘
 
 ## 코딩테스트 연습
+#### 스택/큐
+| 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
+|-|-|-|-|-|-|
+| [링크](https://programmers.co.kr/learn/courses/30/lessons/42586) | 기능개발  | Level2 | 스택/큐 | [링크](https://github.com/solchan98/algorithm/tree/master/Progremmers/스택,큐/기능개발.py) | Programmers |
+| [링크](https://www.acmicpc.net/problem/10773) | 제로  | Silver4 | 스택/큐 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/스택,큐/10773.py) | BOJ |
+
+
 #### 탐욕법(Greedy)
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
