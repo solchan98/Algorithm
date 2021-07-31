@@ -22,6 +22,7 @@
 #### 깊이/너비 우선 탐색(DFS/BFS)
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
+| [링크](https://www.acmicpc.net/problem/2468) | 안전 영역 | Silver1 | BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/2468.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/1697) | 숨바꼭질  | Silver1 | BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/1697.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/2178) | 미로 탐색  | Silver1 | BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/2178.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/7576) | 토마토  | Silver1 | BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/7576.py) | BOJ |
