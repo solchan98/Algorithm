@@ -23,6 +23,7 @@
 #### 탐욕법(Greedy)
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
+| [링크](https://programmers.co.kr/learn/courses/30/lessons/42885) | 구명보트  | Level2 | 탐욕법 | [링크](https://github.com/solchan98/algorithm/tree/master/Progremmers/그리디/구명보트.py) | Programmers |
 | [링크](https://www.acmicpc.net/problem/11047) | 동전 0  | Silver2 | 탐욕법 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/%EA%B7%B8%EB%A6%AC%EB%94%94/11047.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/11399) | ATM | Silver3 | 탐욕법 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/%EA%B7%B8%EB%A6%AC%EB%94%94/11399.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/2839) | 설탕 배달 | Brozen1 | 탐욕법 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/%EA%B7%B8%EB%A6%AC%EB%94%94/2839.py) | BOJ |
