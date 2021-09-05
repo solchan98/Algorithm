@@ -55,7 +55,14 @@
 | [링크](https://www.acmicpc.net/problem/1260) | DFS와 BFS  | Silver2 | DFS/BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/1260.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/4963) | 섬의 개수  | Silver2 | DFS/BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/4963.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/2606) | 바이러스  | Silver3 | BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/2606.py) | BOJ |
+
 #### 동적계획법(Dynamic Programming)
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://www.acmicpc.net/problem/1463) | 1로 만들기  | Silver3 | DP | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/1463.py) | BOJ |
+
+#### 이분탐색
+| 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
+|-|-|-|-|-|-|
+| [링크](https://www.acmicpc.net/problem/1920) | 수 찾기  | Silver4 | 이분탐색 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/이분탐색/1920.py) | BOJ |
+
