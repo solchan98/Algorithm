@@ -1,29 +1,25 @@
 # 알고리즘
 
 ## 코딩테스트 연습
-#### 2019 KAKAO BLIND RECRUITMENT
+### 2019 KAKAO BLIND RECRUITMENT
 | 문제 | 제목 | 레벨 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42888) | 오픈채팅방 | Level2 | [링크](https://github.com/solchan98/algorithm/tree/master/2019.KAKAO.BLIND.RECRUITMENT/오픈채팅방.py) | 카카오 |
 
-#### 정렬
-| 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
-|-|-|-|-|-|-|
-| [링크](https://programmers.co.kr/learn/courses/30/lessons/42746) | 가장 큰 수  | Level2 | 정렬 | [링크](https://github.com/solchan98/algorithm/tree/master/Progremmers/정렬/가장.큰.수.py) | Programmers |
 
-#### 해시
+### 해시
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42577) | 전화번호 목록 | Level2 | 해시 | [링크](https://github.com/solchan98/algorithm/tree/master/Progremmers/해시/전화번호.목록.py) | Programmers |
 
-#### 정렬
+### 정렬
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42746) | 가장 큰 수  | Level2 | 정렬 | [링크](https://github.com/solchan98/algorithm/tree/master/Progremmers/정렬/가장.큰.수.py) | Programmers |
 | - | 두 배열의 원소 교체  | 하 | 정렬 | [링크](https://github.com/solchan98/algorithm/blob/master/Book/%EA%B7%B8%EB%A6%AC%EB%94%94/두_배열의_원소_교체.py) | Book |
 
 
-#### 스택/큐
+### 스택/큐
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42587) | 프린터  | Level2 | 스택/큐 | [링크](https://github.com/solchan98/algorithm/tree/master/Progremmers/스택,큐/프린터.py) | Programmers |
@@ -31,7 +27,7 @@
 | [링크](https://www.acmicpc.net/problem/10773) | 제로  | Silver4 | 스택/큐 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/스택,큐/10773.py) | BOJ |
 
 
-#### 탐욕법(Greedy)
+### 탐욕법(Greedy)
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42885) | 구명보트  | Level2 | 탐욕법 | [링크](https://github.com/solchan98/algorithm/tree/master/Progremmers/그리디/구명보트.py) | Programmers |
@@ -43,7 +39,7 @@
 | - | 숫자 카드 게임 | 중하 | 탐욕법 | [링크](https://github.com/solchan98/algorithm/blob/master/Book/%EA%B7%B8%EB%A6%AC%EB%94%94/%EC%88%AB%EC%9E%90_%EC%B9%B4%EB%93%9C_%EA%B2%8C%EC%9E%84.py) | Book |
 | - | 가장 큰 수 더하기 | 하 | 탐욕법 | [링크](https://github.com/solchan98/algorithm/blob/master/Book/%EA%B7%B8%EB%A6%AC%EB%94%94/%ED%81%B0_%EC%88%98%EC%9D%98_%EB%B2%95%EC%B9%99.py) | Book |
 
-#### 깊이/너비 우선 탐색(DFS/BFS)
+### 깊이/너비 우선 탐색(DFS/BFS)
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/43165) | 타겟 넘버 | Level2 | DFS/BFS | [링크](https://github.com/solchan98/algorithm/tree/master/Progremmers/DFS.BFS/타겟.넘버.py) | Programmers |
@@ -57,12 +53,12 @@
 | [링크](https://www.acmicpc.net/problem/4963) | 섬의 개수  | Silver2 | DFS/BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/4963.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/2606) | 바이러스  | Silver3 | BFS | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/DFSBFS/2606.py) | BOJ |
 
-#### 동적계획법(Dynamic Programming)
+### 동적계획법(Dynamic Programming)
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://www.acmicpc.net/problem/1463) | 1로 만들기  | Silver3 | DP | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/1463.py) | BOJ |
 
-#### 이분탐색
+### 이분탐색
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://www.acmicpc.net/problem/2110) | 공유기 설치 | Silver1 | 이분탐색 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/이분탐색/2110.py) | BOJ |
