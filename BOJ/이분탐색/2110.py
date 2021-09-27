@@ -1,40 +1,39 @@
 # 공유기 설치, Silver1
-from sys import stdin
+import sys
+input = sys.stdin.readline
 
 ## Insert Data
-N, C = map(int, stdin.readline().split());
-house = [];
-for i in range(N):
-    house.append(int(stdin.readline()));
-
-house.sort();
+n, c = map(int, input().split())
+array = []
+for i in range(n):
+    array.append(int(input()))
+array.sort()
 
 ## Router Count
-def findRouter(start, end):
-    answer = 0;
+def findRouter(array, start, end):
     while start <= end:
-        mid = (start + end) // 2;
-        current = house[0];
-        count = 1;
+        mid = (start + end) // 2
+        current = array[0]
+        count = 1
 
-        for i in range(1, len(house)):
-            if house[i] >= current + mid:
-                count += 1;
-                current = house[i];
+        for i in range(1, len(array)):
+            if array[i] >= current + mid:
+                count += 1
+                current = array[i]
 
-        if count >= C:
-            start = mid + 1;
-            answer = mid;
+        if count >= c:
+            global answer
+            start = mid + 1
+            answer = mid
         else:
-            end = mid - 1;
-    return answer;
+            end = mid - 1
 
 
-start = house[0];
-end = house[-1] - house[0];
-
-print(findRouter(start, end));
-
+start = 1
+end = array[-1] - array[0]
+answer = 0
+findRouter(array, start, end)
+print(answer)
 
 # 풀이
 # 반복적으로 갭을 설정하여 C개 이상의 공유기를 설치하는 경우를 찾는다.

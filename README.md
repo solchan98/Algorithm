@@ -62,5 +62,6 @@
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://www.acmicpc.net/problem/2110) | 공유기 설치 | Silver1 | 이분탐색 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/이분탐색/2110.py) | BOJ |
+| [링크](https://www.acmicpc.net/problem/2805) |나무 자르기 | Silver3 | 이분탐색 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/이분탐색/2805.py) | BOJ |
 | [링크](https://www.acmicpc.net/problem/1920) | 수 찾기  | Silver4 | 이분탐색 | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/이분탐색/1920.py) | BOJ |
 | - | 부품 찾기  | 중하 | 이진탐색 | [링크](https://github.com/solchan98/algorithm/blob/master/Book/이진탐색/부품_찾기.py) | BOOK |
