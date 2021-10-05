@@ -57,7 +57,7 @@
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|-|
 | [링크](https://www.acmicpc.net/problem/1463) | 1로 만들기  | Silver3 | DP | [링크](https://github.com/solchan98/algorithm/blob/master/BOJ/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/1463.py) | BOJ |
-| - | 1로 만들기  | 중하 | DP | [링크](https://github.com/solchan98/algorithm/blob/master/src/Book/p217.java) | Book |
+| - | 1로 만들기  | 중하 | DP | [링크](https://github.com/solchan98/algorithm/blob/master/src/Book/p217.class) | Book |
 
 ### 이진탐색
 | 문제 | 제목 | 레벨 | 유형 | 소스 코드 | 문제 제공 |
