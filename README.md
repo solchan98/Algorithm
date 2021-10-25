@@ -1,7 +1,7 @@
 # 알고리즘
 
 ## 코딩테스트 연습
-### 2019 KAKAO BLIND RECRUITMENT
+<!-- ### 2019 KAKAO BLIND RECRUITMENT
 | 문제 | 제목 | 레벨 | 소스 코드 | 문제 제공 |
 |-|-|-|-|-|
 | [링크](https://programmers.co.kr/learn/courses/30/lessons/42888) | 오픈채팅방 | Level2 | [링크](https://github.com/solchan98/algorithm/tree/master/2019.KAKAO.BLIND.RECRUITMENT/오픈채팅방.py) | 카카오 |
@@ -70,3 +70,4 @@
 
 언어 변경( 10/05 )  
 **Python -> Java**
+-->
