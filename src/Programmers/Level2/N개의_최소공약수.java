@@ -1,7 +1,6 @@
 package Programmers.Level2;
 
 public class N개의_최소공약수 {
-
     public static void main(String[] args) {
         Solution12953 solution12953 = new Solution12953();
         int result = solution12953.solution(new int[]{2, 6, 8, 14});
