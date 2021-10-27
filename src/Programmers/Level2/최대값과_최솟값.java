@@ -1,9 +1,6 @@
 package Programmers.Level2;
 
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class 최대값과_최솟값 {
 
@@ -16,10 +13,14 @@ public class 최대값과_최솟값 {
 
 class Solution12939 {
     public String solution(String s) {
-        List<Integer> integerList = Arrays.stream(s.split(" "))
-                .map(x -> Integer.parseInt(x)).collect(Collectors.toList());
-        Integer max = integerList.stream().max(Comparator.naturalOrder()).get();
-        Integer min = integerList.stream().min(Comparator.naturalOrder()).get();
+        String[] strList = s.split(" ");
+        int intList[] = new int[strList.length];
+
+        for(int i = 0; i < strList.length; i++) {
+            intList[i] = Integer.parseInt(strList[i]);
+        }
+        int max = Arrays.stream(intList).max().getAsInt();
+        int min = Arrays.stream(intList).min().getAsInt();
         return min + " " + max;
     }
 }
