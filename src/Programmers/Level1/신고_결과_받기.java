@@ -7,9 +7,9 @@ public class 신고_결과_받기 {
         Solution92334 solution92334 = new Solution92334();
 
         System.out.println(Arrays.toString(solution92334.solution(
-                new String[]{"con", "ryan"},
-                new String[]{"ryan con", "ryan con", "ryan con", "ryan con"},
-                3
+                new String[]{"muzi", "frodo", "apeach", "neo"},
+                new String[]{"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"},
+                2
         )));
     }
 }
@@ -19,46 +19,58 @@ class Solution92334 {
         Map<String, List<String>> reportStatus = new HashMap<>();
         List<String> reportedList = new ArrayList<>();
         setReportStatusAndReportedList(reportList, reportStatus, reportedList);
-        Set<String> banList = getBanList(reportedList, k);
+        Set<String> banList = getBanList(reportStatus, k);
         return getSendMailList(idList, reportStatus, banList);
+    }
+
+    private int[] getSendMailList(String[] idList, Map<String, List<String>> reportStatus, Set<String> banList) {
+        Map<String, Integer> sendMailCntMap = new LinkedHashMap<>();
+        initSendMailCntMap(idList, sendMailCntMap);
+        calSendMailCntMap(reportStatus, banList, sendMailCntMap);
+        return calSendMailCntList(idList, sendMailCntMap);
+    }
+
+    private int[] calSendMailCntList(String[] idList, Map<String, Integer> sendMailCntMap) {
+        int[] sendMailCntList = new int[idList.length];
+        final int[] i = {0};
+        sendMailCntMap.forEach((key, value) -> sendMailCntList[i[0]++] = value);
+        return sendMailCntList;
+    }
+
+    private void calSendMailCntMap(Map<String, List<String>> reportStatus, Set<String> banList, Map<String, Integer> sendMailCntMap) {
+        for(String ban: banList) {
+            List<String> strings = reportStatus.get(ban);
+            strings.forEach( x-> sendMailCntMap.put(x, sendMailCntMap.get(x) +1));
+        }
+    }
+
+    private void initSendMailCntMap(String[] idList, Map<String, Integer> sendMailCntMap) {
+        for(String id: idList) {
+            sendMailCntMap.put(id, 0);
+        }
+    }
+
+    private Set<String> getBanList(Map<String, List<String>> reportStatus, int k) {
+        Set<String> banList = new HashSet<>();
+        reportStatus.forEach((key, value) -> {
+            if(value.size() >= k) {
+                banList.add(key);
+            }
+        });
+        return banList;
     }
 
     private void setReportStatusAndReportedList(String[] reportList, Map<String, List<String>> reportStatus, List<String> reportedList) {
         for (String report: reportList) {
             String[] list = report.split(" ");
-            if(Objects.isNull(reportStatus.get(list[0]))) {
-                reportStatus.put(list[0], new ArrayList<>());
-            }
-            if(!reportStatus.get(list[0]).contains(list[1])){
-                reportStatus.get(list[0]).add(list[1]);
-                reportedList.add(list[1]);
-            }
-        }
-    }
-
-    private int[] getSendMailList(String[] idList, Map<String, List<String>> reportStatus, Set<String> banList) {
-        int[] result = new int[idList.length];
-        for(int i = 0; i < idList.length; i++) {
-            for(String ban: banList) {
-                List<String> strings = reportStatus.get(idList[i]);
-                if(!Objects.isNull(strings)) {
-                    if(strings.contains(ban)) {
-                        result[i] += 1;
-                    }
+            if(!Objects.equals(list[0], list[1])){
+                if(Objects.isNull(reportStatus.get(list[1]))) {
+                    reportStatus.put(list[1], new ArrayList<>());
+                }
+                if(!reportStatus.get(list[1]).contains(list[0])){
+                    reportStatus.get(list[1]).add(list[0]);
                 }
             }
         }
-        return result;
-    }
-
-    private Set<String> getBanList(List<String> reportedList, int k) {
-        Set<String> banList = new HashSet<>();
-        for(int i = 0; i < reportedList.size(); i++) {
-            int frequency = Collections.frequency(reportedList, reportedList.get(i));
-            if(frequency >= k) {
-                banList.add(reportedList.get(i));
-            }
-        }
-        return banList;
     }
 }
