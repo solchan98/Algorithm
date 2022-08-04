@@ -1,12 +1,5 @@
 package leetcode;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
- }
-
 public class Leet1379 {
     TreeNode result;
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
