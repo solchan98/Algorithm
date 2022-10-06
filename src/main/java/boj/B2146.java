@@ -9,12 +9,12 @@ import java.util.StringTokenizer;
 
 public class B2146 {
 
-    static class Dot {
+    static class Node {
         int x;
         int y;
         int dist;
 
-        public Dot(int x, int y, int dist) {
+        public Node(int x, int y, int dist) {
             this.x = x;
             this.y = y;
             this.dist = dist;
@@ -31,15 +31,10 @@ public class B2146 {
     public static void main(String[] args) throws IOException {
         init();
 
-        int cnt = 2;
+        int idx = 2;
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                if (map[i][j] == 1) setUpMap(i,j, cnt++);
-            }
-        }
-
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
+                if (map[i][j] == 1) setUpMap(i,j, idx++);
                 if (map[i][j] != 0) bfs(i, j);
             }
         }
@@ -63,8 +58,8 @@ public class B2146 {
         }
     }
 
-    private static void setUpMap(int x, int y, int cnt) {
-        map[x][y] = cnt;
+    private static void setUpMap(int x, int y, int idx) {
+        map[x][y] = idx;
         visited[x][y] = true;
 
         for (int index = 0; index < 4; index++) {
@@ -72,31 +67,35 @@ public class B2146 {
             int ny = y + dy[index];
 
             if (nx >= 0 && nx < N && ny >= 0 && ny < N && !visited[nx][ny] && map[nx][ny] == 1) {
-                visited[nx][ny] = true;
-                map[nx][ny] = cnt;
-                setUpMap(nx, ny, cnt);
+                map[nx][ny] = idx;
+                setUpMap(nx, ny, idx);
             }
         }
     }
 
     private static void bfs(int x, int y) {
-        Deque<Dot> deque = new ArrayDeque<>();
-        deque.add(new Dot(x, y, 0));
-        int curNum = map[x][y];
+        Deque<Node> deque = new ArrayDeque<>();
+        deque.add(new Node(x, y, 0));
+        int current = map[x][y];
         boolean[][] visited = new boolean[N][N];
         visited[x][y] = true;
 
         while (!deque.isEmpty()) {
-            Dot dot = deque.remove();
+            Node node = deque.remove();
+
+            if (node.dist >= min) {
+                return;
+            }
+
             for (int i = 0; i < 4; i++) {
-                int nx = dot.x + dx[i];
-                int ny = dot.y + dy[i];
-                if (nx >= 0 && nx < N && ny >= 0 && ny < N && !visited[nx][ny] && map[nx][ny] != curNum) {
+                int nx = node.x + dx[i];
+                int ny = node.y + dy[i];
+                if (nx >= 0 && nx < N && ny >= 0 && ny < N && !visited[nx][ny] && map[nx][ny] != current) {
                     if (map[nx][ny] == 0) {
                         visited[nx][ny] = true;
-                        deque.add(new Dot(nx, ny, dot.dist + 1));
+                        deque.add(new Node(nx, ny, node.dist + 1));
                     } else {
-                        min = Math.min(min, dot.dist);
+                        min = Math.min(min, node.dist);
                     }
                 }
             }
