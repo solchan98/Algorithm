@@ -10,17 +10,17 @@ public class B2529 {
 
     static int n;
     static boolean[] visited;
-    static boolean[] flagArr;
+    static String[] flagArr;
     static List<String> resultList = new ArrayList<>();
 
     private static void init() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
-        String[] strings = br.readLine().split(" ");
-        flagArr = new boolean[strings.length];
-        for (int idx = 0; idx < strings.length; idx++) {
-            flagArr[idx] = strings[idx].equals(">");
-        }
+        flagArr = br.readLine().split(" ");
+//        flagArr = new boolean[strings.length];
+//        for (int idx = 0; idx < strings.length; idx++) {
+//            flagArr[idx] = strings[idx].equals(">");
+//        }
         visited = new boolean[10];
     }
 
@@ -30,20 +30,20 @@ public class B2529 {
             return;
         }
 
-        for(int j = 0 ; j < 10; j++) {
-            if (!visited[j]) {
-                if(idx == 0 || validate(Integer.parseInt(num.substring(idx - 1, idx)), j, flagArr[idx-1])) {
-                    visited[j] = true;
-                    dfs(num+j, idx+1);
-                    visited[j] = false;
+        for(int i = 0 ; i < 10; i++) {
+            if (!visited[i]) {
+                if(idx == 0 || validate(Integer.parseInt(num.substring(idx - 1, idx)), i, flagArr[idx-1])) {
+                    visited[i] = true;
+                    dfs(num + i, idx + 1);
+                    visited[i] = false;
                 }
             }
         }
 
     }
 
-    private static boolean validate(int a, int b, boolean flag) {
-        return flag ? a > b : a < b;
+    private static boolean validate(int a, int b, String flag) {
+        return flag.equals(">") ? a > b : a < b;
     }
 
     private static void print() {
